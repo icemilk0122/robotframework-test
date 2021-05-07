@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.1+ on darwin)" generated="20210507 17:53:53.498" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot Tests" source="/Users/weschuang/Documents/github/robotframework-test/robot_tests">
+<suite id="s1-s1" name="Robot Test Features" source="/Users/weschuang/Documents/github/robotframework-test/robot_tests/robot_test_features.robot">
+<test id="s1-s1-t1" name="Medium Page">
+<kw name="When User browse Medium page" library="robot_test_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://medium.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210507 17:53:53.596" level="INFO">Opening browser 'Chrome' to base url 'https://medium.com/'.</msg>
+<status status="PASS" starttime="20210507 17:53:53.596" endtime="20210507 17:54:03.683"/>
+</kw>
+<status status="PASS" starttime="20210507 17:53:53.596" endtime="20210507 17:54:03.683"/>
+</kw>
+<kw name="Then User will see &quot;Medium – Where good ideas find you.&quot; keyword in page title" library="robot_test_keywords" sourcename="User will see &quot;${PageTitle}&quot; keyword in page title">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${PageTitle}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20210507 17:54:04.401" level="INFO">Page title is 'Medium – Where good ideas find you.'.</msg>
+<status status="PASS" starttime="20210507 17:54:03.684" endtime="20210507 17:54:04.401"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210507 17:54:04.401" endtime="20210507 17:54:04.477"/>
+</kw>
+<status status="PASS" starttime="20210507 17:54:03.684" endtime="20210507 17:54:04.477"/>
+</kw>
+<status status="PASS" starttime="20210507 17:53:53.595" endtime="20210507 17:54:04.477"/>
+</test>
+<status status="PASS" starttime="20210507 17:53:53.512" endtime="20210507 17:54:04.478"/>
+</suite>
+<status status="PASS" starttime="20210507 17:53:53.500" endtime="20210507 17:54:04.479"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Tests">Robot Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot Test Features">Robot Tests.Robot Test Features</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
